@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="info"></div>
+        <div id="form">
+            <h1>Training and Placement Registration Form</h1>
+            <form id="registrationForm" enctype="multipart/form-data">
+                <section class="hidden">
+                    <h1>Personal Info</h1>    
+                    <div class="input-control">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Enter Your First Name">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Enter Your last Name">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="fatherName">Father's Name</label>
+                        <input type="text" id="fatherName" name="fatherName" placeholder="Enter Your Father Name">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label>Gender</label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="text" id="mobile" name="mobile" placeholder="Mobile No. (+91)">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="abc@xyz.com">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="photo">Photo</label>
+                        <input type="file" id="photo" name="photo">
+                        <div class="error"></div>
+                    </div>
+                </section>
+
+                <section class="hidden">
+                    <h1>Address:</h1>
+                    <div class="input-control">
+                        <label for="address">Permanent Address</label>
+                        <input type="text" id="address" name="address" placeholder="Enter Permanent Address">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Enter City">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="region">Region/District</label>
+                        <input type="text" id="region" name="region" placeholder="Enter Region">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="pin">Pin Code</label>
+                        <input type="text" id="pin" name="pin" placeholder="Enter Pin/Zip code">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" placeholder="Enter Country">
+                        <div class="error"></div>
+                    </div>
+
+                    
+                </section>
+
+                
+                <section class="hidden">
+                    <h1>Education Info</h1>
+                    <div class="input-control">
+                        <label for="matrix">10th Grade Percentage</label>
+                        <input type="number" id="matrix" name="matrix" placeholder="10th Percentage">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="twelvePercentage">12th Grade Percentage or Diploma Percentage</label>
+                        <input type="number" id="twelvePercentage" name="twelvePercentage" placeholder="12th/Diploma Percentage">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="course">Graduation Course</label>
+                        <input type="text" id="course" name="course" placeholder="Course (i.e. B.Tech, MBA, BCA,etc.)">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="institute">Institute</label>
+                        <input type="text" id="institute" name="institute" placeholder="Institute Name">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="university">University</label>
+                        <input type="text" id="university" name="university" placeholder="University Name">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="yearPassing">Year of Passing</label>
+                        <input type="number" id="yearPassing" name="yearPassing" placeholder="Year of Passing">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="cgpa">CGPA/Percentage</label>
+                        <input type="number" id="cgpa" name="cgpa" step="0.1" placeholder="CGPA or Percentage">
+                        <div class="error"></div>
+                    </div>
+                </section>
+
+                <section class="hidden">
+                    <h1>CV and Portfolio</h1>
+                    <div class="input-control">
+                        <label for="cv">CV</label>
+                        <input type="file" id="cv" name="cv" placeholder="CV (.pdf)">
+                        <div class="error"></div>
+                    </div>
+
+                    <div class="input-control">
+                        <label for="portfolio">Portfolio URL</label>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="Link to the portfolio (eg. nupurKuhite.io)">
+                        <div class="error"></div>
+                    </div>
+                </section>
+
+                <div class="input-control">
+                    <label><input type="checkbox" id="declaration" name="declaration"> I agree to the terms and conditions</label>
+                    <div class="error"></div>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="form-validation.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
